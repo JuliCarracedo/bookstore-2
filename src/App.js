@@ -1,11 +1,12 @@
 import './App.css';
+import Books from './components/Books';
+import Categories from './components/Categories';
 
-function App() {
-  return (
-    <div className="App">
-     
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <Books />
+    <Categories />
+  </div>
+);
 
 export default App;
