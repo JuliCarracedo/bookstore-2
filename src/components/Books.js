@@ -1,9 +1,10 @@
 import React from 'react';
 import BookForm from './BookForm';
+import BookLog from './BookLog';
 
 const Books = () => (
   <div>
-    Books
+    <BookLog />
     <BookForm />
   </div>
 );
