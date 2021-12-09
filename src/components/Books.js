@@ -3,7 +3,7 @@ import BookForm from './BookForm';
 import BookLog from './BookLog';
 
 const Books = () => {
-  const books = useSelector((state) => state.books);
+  const books = useSelector((state) => state.books) || [];
   return (
     <div>
       { books.map((book) => (

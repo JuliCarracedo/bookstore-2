@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 } from 'uuid';
-import { addBook } from '../redux/books/books';
+import { sendBook } from '../redux/books/asyncBooks';
 
 const BookForm = () => {
   const dispatch = useDispatch();
@@ -16,11 +16,11 @@ const BookForm = () => {
       title,
       category,
     };
-    dispatch(addBook(newBook));
+    dispatch(sendBook(newBook));
     return null;
   };
   return (
-    <form>
+    <div>
       <h2>ADD NEW BOOK</h2>
       <input type="text" name="title" onChange={(e) => setTitle(e.target.value)} placeholder="Add book title" />
       <select name="category" defaultValue="idle" onChange={(e) => { setCategory(e.target.value); }}>
@@ -30,7 +30,7 @@ const BookForm = () => {
         <option value="adventure">Adventure</option>
       </select>
       <input type="button" onClick={(e) => submitBookToStore(e)} value="Submit" />
-    </form>
+    </div>
   );
 };
 
