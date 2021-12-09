@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import { deleteBook } from '../redux/books/asyncBooks';
 
 const BookLog = (props) => {
   const { title, category, id } = props;
@@ -9,7 +9,7 @@ const BookLog = (props) => {
 
   const handleRemove = (e) => {
     e.stopPropagation();
-    dispatch(removeBook(id));
+    dispatch(deleteBook(id));
   };
   return (
     <div>
