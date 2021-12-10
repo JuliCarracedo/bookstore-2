@@ -5,7 +5,7 @@ import BookLog from './BookLog';
 const Books = () => {
   const books = useSelector((state) => state.books) || [];
   return (
-    <div>
+    <div className="books-container">
       { books.map((book) => (
         <BookLog
           key={book.title}

@@ -1,3 +1,163 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@300&display=swap');
+
+body {
+  width: 100%;
+  background-color: #e8e8e89d;
+}
+
+.bookstore {
+  font-family: 'Montserrat', sans-serif;
+  color: #0290ff;
+  font-size: 1.875rem;
+  margin-left: 10%;
+}
+
+.navbar {
+  display: flex;
+  width: 98.5%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: solid 4px #e8e8e8;
+  background-color: whitesmoke;
+}
+
+.links {
+  font-family: Montserrat, serif;
+  font-size: 1.2rem;
+  width: 40%;
+  display: flex;
+}
+
+.link {
+  color: #121212;
+  text-decoration: none;
+  margin-right: 10%;
+}
+
+.user-svg {
+  fill: #0290ff;
+  margin: 10px 12px 10px 12px;
+}
+
+.user {
+  border-radius: 50%;
+  border: solid 1px #e8e8e8;
+  padding: 2px;
+  margin-right: 10%;
+}
+
+.books-container {
+  margin: 5% 12% 5% 12%;
+}
+
+.log {
+  display: flex;
+  flex-direction: row;
+  background-color: whitesmoke;
+  border: solid 2px #e8e8e8;
+  border-radius: 5px;
+  padding: 1% 3% 1% 3%;
+  margin: 1%;
+  justify-content: space-between;
+}
+
+.book-cat {
+  font-family: Montserrat, serif;
+  font-size: 18px;
+  color: #121212;
+  opacity: 0.5;
+  margin: 5px 0 5px 0;
+}
+
+.book-title {
+  font-size: 25px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  margin: 5px 0 5px 0;
+  color: #121212;
+}
+
+.book-author {
+  font-size: 18px;
+}
+
+.remove {
+  color: #4386bf;
+  border: none;
+  background-color: whitesmoke;
+  font-family: 'Roboto Slab', serif;
+}
+
+.wheel {
+  width: 4.25rem;
+  height: 4.25rem;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #379cf6;
+  border-radius: 50%;
+}
+
+.log-left {
+  width: 30%;
+}
+
+.log-mid {
+  display: flex;
+  margin-top: 2%;
+  width: 40%;
+  justify-content: end;
+}
+
+.percentage {
+  font-family: Montserrat, serif;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 5px 2px 5px 2px;
+  color: #121212;
+}
+
+.completed {
+  margin: 5px 2px 5px 2px;
+  opacity: 0.5;
+  font-family: Montserrat, serif;
+  font-size: 18px;
+  color: #121212;
+}
+
+.Line-2 {
+  width: 2px;
+  height: 6rem;
+  margin: 1.125rem 3.688rem 0 4.938rem;
+  border-left: solid 2px #e8e8e8;
+}
+
+.right {
+  width: 20%;
+}
+
+.current {
+  opacity: 0.5;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  color: #121212;
+  margin: 5px 2px 5px 2px;
+}
+
+.chapter {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  color: #121212;
+  margin: 5px 2px 5px 2px;
+}
+
+.update {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  color: #fff;
+  margin: 5px 2px 5px 2px;
+  padding: 5px 10px 5px 10px;
+  background-color: #0290ff;
+  border: none;
+  border-radius: 5px;
 }

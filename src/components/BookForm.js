@@ -25,9 +25,11 @@ const BookForm = () => {
       <input type="text" name="title" onChange={(e) => setTitle(e.target.value)} placeholder="Add book title" />
       <select name="category" defaultValue="idle" onChange={(e) => { setCategory(e.target.value); }}>
         <option disabled value="idle">Select Category</option>
-        <option value="horror">Horror</option>
-        <option value="romance">Romance</option>
-        <option value="adventure">Adventure</option>
+        <option value="Horror">Horror</option>
+        <option value="Romance">Romance</option>
+        <option value="Adventure">Adventure</option>
+        <option value="Sci-fi">Sci-fi</option>
+        <option value="Documentary">Documentary</option>
       </select>
       <input type="button" onClick={(e) => submitBookToStore(e)} value="Submit" />
     </div>
