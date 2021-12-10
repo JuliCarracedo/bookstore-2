@@ -20,9 +20,9 @@ const BookForm = () => {
     return null;
   };
   return (
-    <div>
-      <h2>ADD NEW BOOK</h2>
-      <input type="text" name="title" onChange={(e) => setTitle(e.target.value)} placeholder="Add book title" />
+    <div className="book-form">
+      <h2 className="form-title">ADD NEW BOOK</h2>
+      <input className="form-input" type="text" name="title" onChange={(e) => setTitle(e.target.value)} placeholder="Add book title" />
       <select name="category" defaultValue="idle" onChange={(e) => { setCategory(e.target.value); }}>
         <option disabled value="idle">Select Category</option>
         <option value="Horror">Horror</option>
@@ -31,7 +31,7 @@ const BookForm = () => {
         <option value="Sci-fi">Sci-fi</option>
         <option value="Documentary">Documentary</option>
       </select>
-      <input type="button" onClick={(e) => submitBookToStore(e)} value="Submit" />
+      <input className="submit" type="button" onClick={(e) => submitBookToStore(e)} value="Submit" />
     </div>
   );
 };
